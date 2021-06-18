@@ -1,0 +1,96 @@
+.bgImage{
+    
+  height: 100vh;
+    background-size: 98vw; 
+    background-attachment: fixed;  
+  background-repeat: no-repeat;
+  background-image:linear-gradient(rgba(38, 38, 38, 0.596) , rgb(124, 118, 118)) ,url('https://cdn.pixabay.com/photo/2015/09/10/16/10/alive-934653_1280.jpg');
+  background-blend-mode:overlay;
+}
+#header
+{
+        padding: 25px;
+}
+#topbtn{
+    /* display: none; */
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    background-color: #4154f1;
+    box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3), 0px 5px 25px rgba(65, 84, 241, 0.3), 0px 5px 25px rgba(65, 84, 241, 0.3);
+    color: azure;
+    padding: 15px;
+    border-radius: 5px;
+    /* box-shadow: 2px 5px 5px black; */
+    transition: 0.4s;
+}
+.content1{
+  /*  border: 1px solid;
+    border-radius: 27px;*/
+    position: absolute;
+    top: 490px;
+    left: 250px;
+    right:300px; 
+    /* background-color: white; */
+    font-size: 90px;
+    color:yellow;
+    /*padding:20px;*/
+    display: flex;
+    justify-content: center;
+    }
+.content{
+	color:crimson;
+	font-size:20px;
+}
+.healthybody{
+    height: 20%;
+    width: 20%;
+    margin: 2%;
+    border:2px solid greenyellow;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+.healthybody:hover{
+    box-shadow: 0px 0px 10px greenyellow, 0px 0px 30px greenyellow, 0px 0px 40px greenyellow;
+    cursor:auto;
+    transform: scale(1.1);
+}
+.adult{
+    background-color: rgb(229, 237, 240);
+    transition: 0.4s;
+    }
+    .adult:hover{
+    background-color: 	antiquewhite;
+    box-shadow: 0px 0px 10px #4154f1, 0px 0px 10px #4154f1, 0px 0px 40px #4154f1;
+    color: navy;
+}
+
+.image{
+    width:50%;
+    height: 400px;
+    display: block;
+   margin-left: auto;
+   margin-right: auto;
+
+
+}
+.list:hover{
+	background-color:azure;
+}
+
+
+.service-box:hover{
+	background-color:lightgreen;
+}
+.box:hover{
+	background-color:beige;
+}
+
+.swiper-slide:hover{
+	background-color:papayawhip;
+}
+.testimonial-item:hover{
+	background-color:lightcyan;
+}
