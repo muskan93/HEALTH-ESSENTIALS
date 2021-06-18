@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/index%20(2).css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+      .block{
+          display: none;
+      }
+      #btn li{
+    cursor: pointer;
+  display: inline-block;
+  padding: 8px 20px 10px 20px;
+  font-size: 15px;
+  line-height: 1;
+  margin: 0 4px 8px 4px;
+  transition: 0.3s;
+  border-radius: 50px;      
+  list-style: none;
+  text-align: center;
+  background: white;
+  color: black;
+border: solid #4154f1;
+border-width: thin;
+          }
+      .next{
+          margin-left: 550px;
+      }
+      .next li {
+  margin: 0 5px;
+  transition: 0.3s;
+          list-style: none;
+          float: left;
+  align-items: center;
+  justify-content: center;
+}
+
+.next li a {
+  padding: 7px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.next li:hover {
+  background: #4154f1;
+}
+
+.next a:hover{
+  color: #fff;
+}
+      .next2{
+         background: #4154f1;
+      }
+      .next2 a{
+          color: #fff;
+      }
+      }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#all").click(function(){
+               $(".full").removeClass("block"); 
+                $(".wl").removeClass("block"); 
+              $(".wg").removeClass("block"); 
+               $(".yoga").removeClass("block"); 
+           });
+           $("#weightloss").click(function(){
+                $(".wl").removeClass("block");  
+               //------
+               $(".full").addClass("block"); 
+              $(".wg").addClass("block"); 
+               $(".yoga").addClass("block"); 
+               //-------
+               $(".ywl").removeClass("block");
+           });
+            $("#weightgain").click(function(){ 
+              $(".wg").removeClass("block"); 
+               //------
+               $(".full").addClass("block"); 
+              $(".wl").addClass("block"); 
+               $(".yoga").addClass("block");
+                //------
+                $(".ywg").removeClass("block");
+           });
+            $("#yoga").click(function(){
+               $(".yoga").removeClass("block"); 
+               //------
+               $(".full").addClass("block"); 
+              $(".wg").addClass("block"); 
+               $(".wl").addClass("block"); 
+           });
+            $("#fullbody").click(function(){
+                $(".full").removeClass("block"); 
+               //------
+               $(".wl").addClass("block"); 
+              $(".wg").addClass("block"); 
+               $(".yoga").addClass("block"); 
+                //----
+                $(".yfb").removeClass("block");
+           });
+        });
+
+    </script>
+</head>
+<body>
+    <header id="header" class="header fixed-top">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+      
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="https://cdn.pixabay.com/photo/2017/08/19/11/36/heart-2658206_960_720.png" alt="" width="30px" height="30px">
+        <span>HEALTH ESSENTIALS</span>
+      </a>
+    
+    <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="sample1.html">Home</a></li>
+         <!-- <li><a class="nav-link scrollto" href="#">About</a></li>
+          <li><a class="nav-link scrollto" href="#">Team</a></li>
+          <li><a href="blog.html">Covid</a></li>-->
+          <li class="dropdown"><a href="#"><span>Health</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="nutrition.html">Nutrition</a></li>
+              <li><a href="diet.html">Diet</a></li>
+              <li><a href="body.html">Mind</a></li>
+              <li><a href="getfit.html">Fitness</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="authentication.html">Contact</a></li>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+    </div>
+  </header>
+    <br><br>
+<section class="portfolio">
+      <div class="container" >
+        <header class="section-header">
+          <p>FITNESS AT HOME</p>
+          <br>
+          <h2>Check some of the fitness videos recommended by our doctors</h2>
+        </header>
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="btn">
+              <li id="all">All</li>
+              <li id="weightloss">Weight Loss</li>
+              <li id="weightgain">Weight Gain</li>
+              <li id="yoga">Yoga</li>
+              <li id="fullbody">Full Body Workout</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row gy-4" >
+          <div class="col-lg-4 col-md-6 full">
+            <div>
+             <iframe width="415" height="315" src="https://www.youtube.com/embed/ml6cT4AZdqI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 full">
+            <div>
+              <iframe width="415" height="315" src="https://www.youtube.com/embed/yKItGCpL73M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wg">
+            <div>
+              <iframe width="415" height="315" src="https://www.youtube.com/embed/FDpM-CGMXcw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 yoga yfb">
+            <div>
+              <iframe width="415" height="315" src="https://www.youtube.com/embed/Wj0Egd0AcJ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 yoga ywg">
+            <div>
+              <iframe width="415" height="315" src="https://www.youtube.com/embed/zpxHe8NxLmI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 yoga ywl">
+            <div>
+              <iframe width="415" height="315" src="https://www.youtube.com/embed/a66oFnBT68w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wl">
+            <div>
+              <iframe width="415" height="315" src="https://www.youtube.com/embed/F5TeJNxa6Q8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 full">
+            <div>
+              <iframe width="415" height="315" src="https://www.youtube.com/embed/1piFN_ioMVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wl">
+            <div>
+            <iframe width="415" height="315" src="https://www.youtube.com/embed/LhL5SNZfnQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 yoga ywl">
+            <div>
+            <iframe width="415" height="315" src="https://www.youtube.com/embed/WmSIMpIDa_A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 yoga ywg">
+            <div>
+            <iframe width="415" height="315" src="https://www.youtube.com/embed/LCtwW0FssZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 full">
+            <div>
+            <iframe width="415" height="315" src="https://www.youtube.com/embed/BQFHmIf2dHg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>     
+        </div>
+      </div>
+      <br>
+      <div class="next">
+              <ul class="justify-content-center">
+                <li><a href="fitness-overview.html">1</a></li>
+                <li><a href="fitness-myths.html">2</a></li>
+                <li><a href="fitness-categories.html">3</a></li>
+                <li><a href="exercises-types.html">4</a></li>
+                <li class="next2"><a href="fitness.html">5</a></li>
+              </ul>
+            </div>
+    </section>
+</body>
+</html>
