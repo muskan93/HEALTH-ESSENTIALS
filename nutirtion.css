@@ -1,0 +1,107 @@
+.bgImage{
+    
+  height: 102vh;
+    background-size: 100vw; 
+    background-attachment: fixed;  
+  background-repeat: no-repeat;
+  background-image:linear-gradient(rgba(38, 38, 38, 0.596) , rgb(124, 118, 118)) ,url('https://cdn.pixabay.com/photo/2017/06/06/22/46/mediterranean-cuisine-2378758_960_720.jpg');
+  background-blend-mode:overlay;
+/* background-image: url('https://cdn.pixabay.com/photo/2017/10/09/19/29/eat-2834549_960_720.jpg'); */
+}
+
+#header
+{
+        padding: 25px;
+}
+/* h1{
+    background-color: aqua;
+} */
+.content{
+    border: 1px solid;
+    border-radius: 27px;
+    position: absolute;
+    top: 367px;
+    left: 220px;
+    /* right:300px; */
+    /* background-color: white; */
+    font-size: 150px;
+    color:yellowgreen;
+    padding:20px;
+    display: flex;
+    justify-content: center;
+    
+
+}
+.content:hover{
+  background: #BA8B02;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #181818, #BA8B02);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #181818, #BA8B02); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.image{
+    width:75%;
+    height: 500px;
+
+}
+.hey{
+  
+  background-color: rgb(229, 237, 240);
+  width:20%;
+  text-align: center;
+  
+    transition: 0.1s;
+
+}
+.hey:hover{
+  background-color:rgb(110, 238, 210);
+    box-shadow: 0px 0px 10px #e6e7ec, 0px 0px 10px #bbbdc2, 0px 0px 40px #a3a4a8;
+    color: white;
+    font-size: 35px;
+    width:22%
+
+}
+.headings{
+
+  -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+   width:50%;
+   border:1px solid;
+   border-radius: 10px;
+}
+
+/* .images{
+  margin-left: 15%;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px lightgrey, 0px 0px 5px lightgrey, 0px 0px 5px lightgrey;
+    transition: 0.4s;
+} */
+
+.images{
+    margin-left: 15%;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px rgb(236, 206, 206), 0px 0px 5px rgb(238, 167, 167), 0px 0px 5px rgb(233, 198, 198);
+    transition: 0.4s;
+    margin-bottom: 40px;
+}
+.images:hover{
+    cursor: pointer;
+    filter: grayscale(100%);
+    transform: scale(1.01);
+ box-shadow: 0px 0px 5px rgb(71, 71, 141), 0px 0px 5px rgb(98, 114, 136), 0px 0px 5px rgb(76, 99, 150);
+  
+}
+.btns{
+  margin-left: 25%;
+    height: 10vh;
+    font-size: xx-large;
+    width: 50%;
+    background-color: greenyellow;
+    border: none;
+    border-radius: 4px;
+    color: darkgreen;
+    transition: 0.4s;
+}
+
+.btns:hover{
+    box-shadow: 0px 0px 10px greenyellow, 0px 0px 20px greenyellow, 0px 0px 40px greenyellow;
+}
